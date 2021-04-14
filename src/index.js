@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import InjectProvider from './Injection';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <InjectProvider>
+      <App />
+    </InjectProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
